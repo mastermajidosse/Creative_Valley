@@ -14,38 +14,38 @@ export default function ChooseCustomizeSection() {
     },
     {
       id: 2,
-      image: 'https://images.pexels.com/photos/8251046/pexels-photo-8251046.jpeg?auto=compress&cs=tinysrgb&w=600',
-      title: 'Tote Bags'
-    },
-    {
-      id: 3,
       image: 'https://images.pexels.com/photos/7679862/pexels-photo-7679862.jpeg?auto=compress&cs=tinysrgb&w=600',
       title: 'Hoodies'
     },
     {
-      id: 4,
+      id: 3,
       image: 'https://images.pexels.com/photos/5624018/pexels-photo-5624018.jpeg?auto=compress&cs=tinysrgb&w=600',
       title: 'Mugs'
     },
     {
-      id: 5,
+      id: 4,
       image: 'https://images.pexels.com/photos/6567607/pexels-photo-6567607.jpeg?auto=compress&cs=tinysrgb&w=600',
       title: 'Cushions'
     },
     {
-      id: 6,
+      id: 5,
       image: 'https://images.pexels.com/photos/3755913/pexels-photo-3755913.jpeg?auto=compress&cs=tinysrgb&w=600',
       title: 'Canvas Prints'
     },
     {
-      id: 7,
+      id: 6,
       image: 'https://images.pexels.com/photos/8532619/pexels-photo-8532619.jpeg?auto=compress&cs=tinysrgb&w=600',
       title: 'Phone Cases'
     },
     {
-      id: 8,
+      id: 7,
       image: 'https://images.pexels.com/photos/4239091/pexels-photo-4239091.jpeg?auto=compress&cs=tinysrgb&w=600',
       title: 'Stickers'
+    },
+    {
+      id: 8,
+      image: 'https://images.pexels.com/photos/5706712/pexels-photo-5706712.jpeg?auto=compress&cs=tinysrgb&w=600',
+      title: 'Tote Bags'
     }
   ];
 

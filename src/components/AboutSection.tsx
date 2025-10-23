@@ -9,7 +9,7 @@ export default function AboutSection() {
           <div className="relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.pexels.com/photos/3738388/pexels-photo-3738388.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/Rectangle 2226.png"
                 alt="Fabric design workspace"
                 className="w-full h-[500px] object-cover"
               />
