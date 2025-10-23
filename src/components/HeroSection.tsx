@@ -2,7 +2,7 @@ export default function HeroSection() {
   return (
     <section className="relative bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 overflow-hidden">
       {/* Decorative waves - left side (blue) */}
-      <div className="absolute left-0 top-0 bottom-0 w-48 opacity-90">
+      <div className="absolute left-0 top-0 bottom-0 w-24 md:w-48 opacity-90">
         <svg viewBox="0 0 200 800" className="h-full w-full" preserveAspectRatio="none">
           <path d="M0,0 Q50,40 0,80 L0,0 Z" fill="#294bb4" opacity="0.8"/>
           <path d="M0,80 Q50,120 0,160 L0,80 Z" fill="white" opacity="0.9"/>
@@ -18,7 +18,7 @@ export default function HeroSection() {
       </div>
 
       {/* Decorative waves - right side (green) */}
-      <div className="absolute right-0 top-0 bottom-0 w-48 opacity-90">
+      <div className="absolute right-0 top-0 bottom-0 w-24 md:w-48 opacity-90">
         <svg viewBox="0 0 200 800" className="h-full w-full" preserveAspectRatio="none">
           <path d="M200,0 Q150,40 200,80 L200,0 Z" fill="#b4d334" opacity="0.8"/>
           <path d="M200,80 Q150,120 200,160 L200,80 Z" fill="white" opacity="0.9"/>
@@ -33,22 +33,22 @@ export default function HeroSection() {
         </svg>
       </div>
 
-      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 text-center">
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 md:py-32 text-center">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight">
           Welcome to Creative Valley
         </h1>
-        <div className="space-y-2 mb-10">
-          <p className="text-xl md:text-2xl text-gray-700">
+        <div className="space-y-1 sm:space-y-2 mb-8 sm:mb-10">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700">
             Start designing your personalized pieces today.
           </p>
-          <p className="text-xl md:text-2xl text-gray-700">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700">
             Every fabric has a story
           </p>
-          <p className="text-xl md:text-2xl font-semibold text-gray-900">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-gray-900">
             let's create yours.
           </p>
         </div>
-        <button className="px-10 py-4 bg-primary hover:bg-primary-700 text-white font-semibold rounded-full transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+        <button className="px-8 sm:px-10 py-3 sm:py-4 bg-primary hover:bg-primary-700 text-white font-semibold rounded-full transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-sm sm:text-base">
           Start New
         </button>
       </div>

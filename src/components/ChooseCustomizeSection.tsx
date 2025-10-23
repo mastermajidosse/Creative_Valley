@@ -73,13 +73,13 @@ export default function ChooseCustomizeSection() {
   };
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-12 sm:py-16 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
             Choose & Customize
           </h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             With top-quality products and brands, pick the perfect items for your personal style or business. Create your unique products in minutes!
           </p>
         </div>
@@ -97,18 +97,18 @@ export default function ChooseCustomizeSection() {
             {products.map((product) => (
               <div
                 key={product.id}
-                className="flex-shrink-0 w-80 group"
+                className="flex-shrink-0 w-64 sm:w-72 md:w-80 group"
                 style={{ userSelect: 'none' }}
               >
-                <div className="relative rounded-3xl overflow-hidden shadow-lg group-hover:shadow-2xl transition-all duration-300 transform group-hover:-translate-y-2">
+                <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg group-hover:shadow-2xl transition-all duration-300 transform group-hover:-translate-y-2">
                   <img
                     src={product.image}
                     alt={product.title}
-                    className="w-full h-96 object-cover"
+                    className="w-full h-80 sm:h-96 object-cover"
                     draggable="false"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end">
-                    <h3 className="text-white text-2xl font-bold p-6">
+                    <h3 className="text-white text-xl sm:text-2xl font-bold p-4 sm:p-6">
                       {product.title}
                     </h3>
                   </div>

@@ -70,42 +70,42 @@ export default function TestimonialsSection() {
   };
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-12 sm:py-16 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-8 sm:mb-12 md:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
             What Clients Say
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600">
             Hear from our satisfied customers about their experience
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="bg-white border-2 border-gray-100 rounded-3xl p-8 hover:border-primary hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+              className="bg-white border-2 border-gray-100 rounded-2xl sm:rounded-3xl p-6 sm:p-8 hover:border-primary hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
             >
-              <div className="flex items-center gap-4 mb-6">
+              <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
                 <img
                   src={testimonial.image}
                   alt={testimonial.name}
-                  className="w-16 h-16 rounded-full object-cover ring-4 ring-gray-100"
+                  className="w-12 h-12 sm:w-16 sm:h-16 rounded-full object-cover ring-4 ring-gray-100"
                 />
                 <div>
-                  <h4 className="font-bold text-gray-900 text-lg">
+                  <h4 className="font-bold text-gray-900 text-base sm:text-lg">
                     {testimonial.name}
                   </h4>
-                  <p className="text-gray-600 text-sm">{testimonial.role}</p>
+                  <p className="text-gray-600 text-xs sm:text-sm">{testimonial.role}</p>
                 </div>
               </div>
 
-              <div className="mb-4">
+              <div className="mb-3 sm:mb-4">
                 {renderStars(testimonial.rating)}
               </div>
 
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                 "{testimonial.text}"
               </p>
             </div>
